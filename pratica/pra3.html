@@ -8,8 +8,10 @@
 <body>
     <script>
         var nome = prompt('Qual seu nome?');
-        alert('Olá, eu me chamo '+ nome + '!');
-        document.write('Meu nome em MAIÚSCULO é  .toUpperCase(nome)');
+        alert('Olá '+ nome + '!');
+        document.write(`Seu nome em maiusculas é ${nome.toUpperCase()}`);
+        document.write(`Seu nome tem ${nome.length}`);
+        document.write(`Ele em minusculas é ${nome.toLowerCase()}`);
     </script>
 </body>
 </html>
