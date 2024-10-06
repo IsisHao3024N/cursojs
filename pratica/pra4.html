@@ -7,17 +7,20 @@
 </head>
 <body>
     <h1>Descubra sua Nacionalidade</h1>
-    Vivendo em: <input type="text" name="txt">
+    Vivendo em: <input type="text" name="txt" id="txt">
     <input type="button" value="verificar" onclick="resultado()">
     <div id="res">
 
     </div>
     <script>
-        function nacionalidade() {
-            var text = document.querySelector('div#txt');
-            var res = document.q
-            if () {
-                
+        function resultado() {
+            var text = document.querySelector('input#txt');
+            var res = document.querySelector('div#res')
+            var naci = String(text.value);
+            if (naci == 'Brasil') {
+                res.innerHTML = `Você é brasileiro!`
+            }else{
+                res.innerHTML = `Você é estrangeiro`
             }
         }
     </script>
